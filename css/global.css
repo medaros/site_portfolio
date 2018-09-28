@@ -8,8 +8,8 @@ html, body {
 }
 
 body {
-    background-image: url('https://images.pexels.com/photos/934062/pexels-photo-934062.jpeg');
-    background-size: cover;
+    /*background-image: url('https://images.pexels.com/photos/1058367/pexels-photo-1058367.jpeg');
+    */background-size: cover;
 }
 
 nav {
@@ -35,6 +35,7 @@ ul {
     display:flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 ul li {
@@ -48,33 +49,6 @@ ul li {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: bold;
-}
-
-ul li ul li {
-    
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    color:#222;
-    border-radius: 2px;
-}
-
-ul li ul li:before {
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    top:-10px;
-    left:85px;
-    border: 0 solid transparent;
-    border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-bottom: 15px solid #FFF;}
-
-ul li:hover ul li ul li {
-    display: flex;
 }
 
 .navimgs {
@@ -109,14 +83,15 @@ ul li:hover ul li ul li {
     height: 1000px;
     margin:20px;
     border-radius: 3px;
-    border: 1px solid #EEEEEE;
+    border: 1px solid #ccc;
 }
 
 #txtpres {
     font-size: 42px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    margin:50px;
+    margin:100px;
+    color:#FFF;
 }
 
 #bouncy {
