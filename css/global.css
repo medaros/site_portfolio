@@ -1,113 +1,112 @@
-/* Global CSS */
-
 html, body {
-    /* Suprimer tous les espaces generes par defaut */
-    margin:0;padding:0;
-    overflow-x: hidden;
-    background:#EEEEEE;
+    /* supprimer les espaces none necessaires */
+    margin: 0;padding:0;
+    background: #0f1924;
 }
 
-body {
-    /*background-image: url('https://images.pexels.com/photos/1058367/pexels-photo-1058367.jpeg');
-    */background-size: cover;
-}
-
+/* bar de navigation*/
 nav {
-    margin: 0 auto;
-    padding:0;
-    width:100%;
-    background: #111;
-    overflow-x: hidden;
-
+    margin:50px;
 }
 
-/* j'ai cree ce div pour centrer le contenu mais j'ai decidee d'aller avec diplay flex*/
-#containernav {
-  /*  margin: auto;
-    width: 800px; */
-}
-
-ul {
+/* titre */
+h1 {
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin:0;
-    padding:10px; 
-    width: 100%;
-    height: 35px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    color: #ffffe6;
 }
 
+/* buttons navigation */
+ul {
+
+}
+
+/* person. buttons */
 ul li {
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
     color:#FFF;
-    list-style:none;
-    padding: 0 10px;
-    font-size: 18px;
-    height:35px;
-    line-height: 35px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
 }
 
-.navimgs {
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-.navimgs.navpro {
-    background-image:url('../img/profil.PNG');
-    background-size: 35px;
-    width: 45px;
-}
-.navimgs.navsocial {
-    background-image:url('https://mbtskoudsalg.com/images/facebook-twitter-instagram-icons-png-7.png');
-    background-size: 98px;
-    width: 98px;
-    border-left:5px #FFF solid;
-    border-radius: 0 5px 5px 0;
-    background-color:#5cc;
+/* numero de contact / email */
+nav span, nav img  {
+    font-size: 17px;
+    margin:0;
+    padding:0;
+    color: #37cc90;
+    float: right;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-.navimgs.navsocial:hover {
-    cursor: pointer;
+/* corps / projet */
+section {
+    background:#172533;
+    margin: 100px;
+    width: 800px;
+    float:right;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1.5px solid #bdbab7;
+}
+
+/* Personn. projets */
+.boxes {
+    background:#5c7d9b;
+    width:380px;
+    border-radius:5px; 
+    float:left;
+    margin:10px;
+    position: relative;
 
 }
 
-#presentation {
+/* les deux projets recents */
+.boxes.premier {
+    background-image: url(''); /* image fond */
+    height: 350px;
+
+}
+
+.boxes.deux {
+    height: 350px;
+}
+
+/* le reste */
+.reste {
+    margin-top: 100px;
+}
+
+/* le reste nav */
+.reste div {
+    border-radius: 5px;
+}
+
+/* nav bar de chaque projet */
+.boxnav {
+    background: #395e85;
+    position:absolute;
+    bottom: 0;
     width:100%;
+    padding: 30px 0;
+    border-radius:0 0 5px 5px; 
+
 }
 
-#details {
-    background: #FFF;
-    height: 1000px;
-    margin:20px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
+/* texte de chaque projet */
+.boxnav p {
+    color:#EEE;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bolder;
+    margin:0 10px;
+
 }
 
-#txtpres {
-    font-size: 42px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    margin:100px;
-    color:#FFF;
-}
-
-#bouncy {
-    background-color:orange;
-    color:blue;
-    border-right: 10px solid blue;
-    animation-name: cursorbounce;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-
-#bouncy:hover {
-    cursor: pointer;
-}
-
-@keyframes cursorbounce {
-    from {border-right: 10px solid blue;}
-    to {border-right: 10px solid rgba(0,0, 0, 0);}
+/* span light */
+.light {
+    font-weight: 10;
+    font-size: 18px;
 }
