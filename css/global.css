@@ -1,0 +1,138 @@
+/* Global CSS */
+
+html, body {
+    /* Suprimer tous les espaces generes par defaut */
+    margin:0;padding:0;
+    overflow-x: hidden;
+    background:#EEEEEE;
+}
+
+body {
+    background-image: url('https://images.pexels.com/photos/934062/pexels-photo-934062.jpeg');
+    background-size: cover;
+}
+
+nav {
+    margin: 0 auto;
+    padding:0;
+    width:100%;
+    background: #111;
+    overflow-x: hidden;
+
+}
+
+/* j'ai cree ce div pour centrer le contenu mais j'ai decidee d'aller avec diplay flex*/
+#containernav {
+  /*  margin: auto;
+    width: 800px; */
+}
+
+ul {
+    margin:0;
+    padding:10px; 
+    width: 100%;
+    height: 35px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    color:#FFF;
+    list-style:none;
+    padding: 0 10px;
+    font-size: 18px;
+    height:35px;
+    line-height: 35px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+ul li ul li {
+    
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    color:#222;
+    border-radius: 2px;
+}
+
+ul li ul li:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top:-10px;
+    left:85px;
+    border: 0 solid transparent;
+    border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 15px solid #FFF;}
+
+ul li:hover ul li ul li {
+    display: flex;
+}
+
+.navimgs {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.navimgs.navpro {
+    background-image:url('../img/profil.PNG');
+    background-size: 35px;
+    width: 45px;
+}
+.navimgs.navsocial {
+    background-image:url('https://mbtskoudsalg.com/images/facebook-twitter-instagram-icons-png-7.png');
+    background-size: 98px;
+    width: 98px;
+    border-left:5px #FFF solid;
+    border-radius: 0 5px 5px 0;
+    background-color:#5cc;
+}
+
+.navimgs.navsocial:hover {
+    cursor: pointer;
+
+}
+
+#presentation {
+    width:100%;
+}
+
+#details {
+    background: #FFF;
+    height: 1000px;
+    margin:20px;
+    border-radius: 3px;
+    border: 1px solid #EEEEEE;
+}
+
+#txtpres {
+    font-size: 42px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin:50px;
+}
+
+#bouncy {
+    background-color:orange;
+    color:blue;
+    border-right: 10px solid blue;
+    animation-name: cursorbounce;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#bouncy:hover {
+    cursor: pointer;
+}
+
+@keyframes cursorbounce {
+    from {border-right: 10px solid blue;}
+    to {border-right: 10px solid rgba(0,0, 0, 0);}
+}
